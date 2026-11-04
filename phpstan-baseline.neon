@@ -1,1 +1,379 @@
 parameters:
+	ignoreErrors:
+		-
+			message: '#^Call to static method make\(\) on an unknown class Validator\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/BaseModel.php
+
+		-
+			message: '#^Call to an undefined static method GrahamCampbell\\Markdown\\Facades\\Markdown\:\:convertToHtml\(\)\.$#'
+			identifier: staticMethod.notFound
+			count: 1
+			path: src/Casts/MarkdownCast.php
+
+		-
+			message: '#^Function is_logged not found\.$#'
+			identifier: function.notFound
+			count: 1
+			path: src/Crud.php
+
+		-
+			message: '#^Function user_id not found\.$#'
+			identifier: function.notFound
+			count: 1
+			path: src/Crud.php
+
+		-
+			message: '#^Property MicroweberPackages\\Database\\Crud\:\:\$app has unknown class MicroweberPackages\\App\\LaravelApplication as its type\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/Crud.php
+
+		-
+			message: '#^Used function Opis\\Closure\\serialize not found\.$#'
+			identifier: function.notFound
+			count: 1
+			path: src/Crud.php
+
+		-
+			message: '#^Access to property \$attributes_manager on an unknown class MicroweberPackages\\App\\LaravelApplication\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/DatabaseManagerService.php
+
+		-
+			message: '#^Access to property \$cache_manager on an unknown class MicroweberPackages\\App\\LaravelApplication\.$#'
+			identifier: class.notFound
+			count: 18
+			path: src/DatabaseManagerService.php
+
+		-
+			message: '#^Access to property \$category_manager on an unknown class MicroweberPackages\\App\\LaravelApplication\.$#'
+			identifier: class.notFound
+			count: 7
+			path: src/DatabaseManagerService.php
+
+		-
+			message: '#^Access to property \$data_fields_manager on an unknown class MicroweberPackages\\App\\LaravelApplication\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/DatabaseManagerService.php
+
+		-
+			message: '#^Access to property \$fields_manager on an unknown class MicroweberPackages\\App\\LaravelApplication\.$#'
+			identifier: class.notFound
+			count: 2
+			path: src/DatabaseManagerService.php
+
+		-
+			message: '#^Access to property \$media_manager on an unknown class MicroweberPackages\\App\\LaravelApplication\.$#'
+			identifier: class.notFound
+			count: 2
+			path: src/DatabaseManagerService.php
+
+		-
+			message: '#^Access to property \$user_manager on an unknown class MicroweberPackages\\App\\LaravelApplication\.$#'
+			identifier: class.notFound
+			count: 3
+			path: src/DatabaseManagerService.php
+
+		-
+			message: '#^Anonymous function has an unused use \$cache_key\.$#'
+			identifier: closure.unusedUse
+			count: 1
+			path: src/DatabaseManagerService.php
+
+		-
+			message: '#^Anonymous function has an unused use \$params\.$#'
+			identifier: closure.unusedUse
+			count: 1
+			path: src/DatabaseManagerService.php
+
+		-
+			message: '#^Anonymous function has an unused use \$query\.$#'
+			identifier: closure.unusedUse
+			count: 2
+			path: src/DatabaseManagerService.php
+
+		-
+			message: '#^Anonymous function has an unused use \$table\.$#'
+			identifier: closure.unusedUse
+			count: 3
+			path: src/DatabaseManagerService.php
+
+		-
+			message: '#^Call to method filter\(\) on an unknown class Modules\\Category\\Models\\Category\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/DatabaseManagerService.php
+
+		-
+			message: '#^Call to method filter\(\) on an unknown class Modules\\Content\\Models\\Content\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/DatabaseManagerService.php
+
+		-
+			message: '#^Call to method query\(\) on an unknown class Modules\\Category\\Models\\Category\.$#'
+			identifier: class.notFound
+			count: 2
+			path: src/DatabaseManagerService.php
+
+		-
+			message: '#^Call to method query\(\) on an unknown class Modules\\Content\\Models\\Content\.$#'
+			identifier: class.notFound
+			count: 2
+			path: src/DatabaseManagerService.php
+
+		-
+			message: '#^Call to static method connection\(\) on an unknown class MicroweberPackages\\Database\\Traits\\DB\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/DatabaseManagerService.php
+
+		-
+			message: '#^Call to static method query\(\) on an unknown class Modules\\CustomFields\\Models\\CustomField\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/DatabaseManagerService.php
+
+		-
+			message: '#^Call to static method query\(\) on an unknown class Modules\\CustomFields\\Models\\CustomFieldValue\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/DatabaseManagerService.php
+
+		-
+			message: '#^Call to static method query\(\) on an unknown class Modules\\Media\\Models\\Media\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/DatabaseManagerService.php
+
+		-
+			message: '#^Cannot call method save\(\) on class\-string\|object\.$#'
+			identifier: method.nonObject
+			count: 3
+			path: src/DatabaseManagerService.php
+
+		-
+			message: '#^Caught class QueryException not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/DatabaseManagerService.php
+
+		-
+			message: '#^Class Modules\\Category\\Models\\Category not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/DatabaseManagerService.php
+
+		-
+			message: '#^Class Modules\\Content\\Models\\Content not found\.$#'
+			identifier: class.notFound
+			count: 2
+			path: src/DatabaseManagerService.php
+
+		-
+			message: '#^Function get_category_items not found\.$#'
+			identifier: function.notFound
+			count: 4
+			path: src/DatabaseManagerService.php
+
+		-
+			message: '#^Function morph_name not found\.$#'
+			identifier: function.notFound
+			count: 2
+			path: src/DatabaseManagerService.php
+
+		-
+			message: '#^Function save_category not found\.$#'
+			identifier: function.notFound
+			count: 2
+			path: src/DatabaseManagerService.php
+
+		-
+			message: '#^Function user_ip not found\.$#'
+			identifier: function.notFound
+			count: 1
+			path: src/DatabaseManagerService.php
+
+		-
+			message: '#^Instantiated class Modules\\Category\\Models\\Category not found\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/DatabaseManagerService.php
+
+		-
+			message: '#^Method MicroweberPackages\\Database\\DatabaseManagerService\:\:last_id\(\) should return bool\|int but return statement is missing\.$#'
+			identifier: return.missing
+			count: 1
+			path: src/DatabaseManagerService.php
+
+		-
+			message: '#^Method MicroweberPackages\\Database\\DatabaseManagerService\:\:map_array_to_table\(\) should return array but returns mixed\.$#'
+			identifier: return.type
+			count: 1
+			path: src/DatabaseManagerService.php
+
+		-
+			message: '#^Method MicroweberPackages\\Database\\DatabaseManagerService\:\:save\(\) should return int\|string but empty return statement found\.$#'
+			identifier: return.empty
+			count: 1
+			path: src/DatabaseManagerService.php
+
+		-
+			message: '#^Method MicroweberPackages\\Database\\DatabaseManagerService\:\:save\(\) should return int\|string but returns false\.$#'
+			identifier: return.type
+			count: 1
+			path: src/DatabaseManagerService.php
+
+		-
+			message: '#^Property MicroweberPackages\\Database\\DatabaseManagerService\:\:\$app has unknown class MicroweberPackages\\App\\LaravelApplication as its type\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/DatabaseManagerService.php
+
+		-
+			message: '#^Regex pattern is invalid\: Compilation failed\: missing closing parenthesis at offset 95 in pattern\: ~\^\[A\-Za\-z\]\[A\-Za\-z0\-9\]\*\(\\\[\(\?P\<array\>"\(\?\:\.\*\(\?\:\(\?\<\!\\\)\(\?\>\\\\\)\*\\"\)\.\*\|\.\*\)\+\(\?\:\(\?\<\!\\\)\(\?\>\\\\\)\*"\)\)\\\]\|\\\[\\\]\|\)\$~$#'
+			identifier: regexp.pattern
+			count: 1
+			path: src/DatabaseManagerService.php
+
+		-
+			message: '#^Variable \$data in empty\(\) always exists and is not falsy\.$#'
+			identifier: empty.variable
+			count: 1
+			path: src/DatabaseManagerService.php
+
+		-
+			message: '#^Variable \$data_to_save_options in isset\(\) always exists and is not nullable\.$#'
+			identifier: isset.variable
+			count: 1
+			path: src/DatabaseManagerService.php
+
+		-
+			message: '#^Variable \$model might not be defined\.$#'
+			identifier: variable.undefined
+			count: 2
+			path: src/DatabaseManagerService.php
+
+		-
+			message: '#^Variable \$q in empty\(\) always exists and is not falsy\.$#'
+			identifier: empty.variable
+			count: 1
+			path: src/DatabaseManagerService.php
+
+		-
+			message: '#^Variable \$results in empty\(\) always exists and is not falsy\.$#'
+			identifier: empty.variable
+			count: 1
+			path: src/DatabaseManagerService.php
+
+		-
+			message: '#^Variable \$to_search_keyword might not be defined\.$#'
+			identifier: variable.undefined
+			count: 1
+			path: src/DatabaseManagerService.php
+
+		-
+			message: '#^Call to static method flush\(\) on an unknown class Cache\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/Eloquent/Builder/CachedBuilder.php
+
+		-
+			message: '#^Call to static method getStore\(\) on an unknown class Cache\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/Eloquent/Builder/CachedBuilder.php
+
+		-
+			message: '#^Call to static method tags\(\) on an unknown class Cache\.$#'
+			identifier: class.notFound
+			count: 3
+			path: src/Eloquent/Builder/CachedBuilder.php
+
+		-
+			message: '#^Call to an undefined method Illuminate\\Contracts\\Auth\\Factory\:\:id\(\)\.$#'
+			identifier: method.notFound
+			count: 6
+			path: src/Observers/CreatedByObserver.php
+
+		-
+			message: '#^Variable \$group_by_criteria in empty\(\) always exists and is not falsy\.$#'
+			identifier: empty.variable
+			count: 1
+			path: src/Traits/QueryFilter.php
+
+		-
+			message: '#^Variable \$to_search_keywords in empty\(\) always exists and is not falsy\.$#'
+			identifier: empty.variable
+			count: 2
+			path: src/Traits/QueryFilter.php
+
+		-
+			message: '#^Access to an undefined property Illuminate\\Foundation\\Application\:\:\$cache_manager\.$#'
+			identifier: property.notFound
+			count: 2
+			path: src/Utils.php
+
+		-
+			message: '#^Access to an undefined property MicroweberPackages\\Database\\Utils\:\:\$app\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Utils.php
+
+		-
+			message: '#^Access to an undefined property MicroweberPackages\\Database\\Utils\:\:\$mw_escaped_strings\.$#'
+			identifier: property.notFound
+			count: 1
+			path: src/Utils.php
+
+		-
+			message: '#^Anonymous function has an unused use \$class\.$#'
+			identifier: closure.unusedUse
+			count: 1
+			path: src/Utils.php
+
+		-
+			message: '#^Call to an undefined method Illuminate\\Database\\Query\\Builder\:\:whereId\(\)\.$#'
+			identifier: method.notFound
+			count: 1
+			path: src/Utils.php
+
+		-
+			message: '#^Call to an undefined method MicroweberPackages\\Database\\Utils\:\:get_by_id\(\)\.$#'
+			identifier: method.notFound
+			count: 1
+			path: src/Utils.php
+
+		-
+			message: '#^Call to an undefined method MicroweberPackages\\Database\\Utils\:\:save\(\)\.$#'
+			identifier: method.notFound
+			count: 1
+			path: src/Utils.php
+
+		-
+			message: '#^Method MicroweberPackages\\Database\\Utils\:\:map_array_to_table\(\) should return array but returns false\.$#'
+			identifier: return.type
+			count: 1
+			path: src/Utils.php
+
+		-
+			message: '#^PHPDoc tag @param has invalid value \(array\)\: Unexpected token "\\n     \*", expected variable at offset 162 on line 5$#'
+			identifier: phpDoc.parseError
+			count: 1
+			path: src/Utils.php
+
+		-
+			message: '#^PHPDoc tag @param has invalid value \(string\)\: Unexpected token "\\n     \* ", expected variable at offset 142 on line 4$#'
+			identifier: phpDoc.parseError
+			count: 1
+			path: src/Utils.php
+
+		-
+			message: '#^PHPDoc tag @property for property MicroweberPackages\\Database\\Utils\:\:\$app contains unknown class MicroweberPackages\\Application\.$#'
+			identifier: class.notFound
+			count: 1
+			path: src/Utils.php
