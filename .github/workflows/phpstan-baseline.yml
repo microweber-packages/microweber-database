@@ -30,7 +30,12 @@ jobs:
           git add phpstan-baseline.neon
           if git diff --cached --quiet; then
             echo "No baseline change."
-          else
-            git commit -m "chore(phpstan): regenerate CI-faithful baseline [skip ci]"
-            git push
+            exit 0
           fi
+          git commit -m "chore(phpstan): regenerate CI-faithful baseline [skip ci]"
+          pushed=0
+          for i in $(seq 1 8); do
+            if git push; then pushed=1; break; fi
+            echo "push attempt $i failed (likely transient 5xx); retrying..."; sleep 15
+          done
+          if [ "$pushed" != "1" ]; then echo "push failed after retries"; exit 1; fi
