@@ -13,68 +13,44 @@ parameters:
 			path: src/Casts/MarkdownCast.php
 
 		-
-			message: '#^Function is_logged not found\.$#'
-			identifier: function.notFound
-			count: 1
-			path: src/Crud.php
-
-		-
-			message: '#^Function user_id not found\.$#'
-			identifier: function.notFound
-			count: 1
-			path: src/Crud.php
-
-		-
-			message: '#^Property MicroweberPackages\\Database\\Crud\:\:\$app has unknown class MicroweberPackages\\App\\LaravelApplication as its type\.$#'
-			identifier: class.notFound
-			count: 1
-			path: src/Crud.php
-
-		-
-			message: '#^Used function Opis\\Closure\\serialize not found\.$#'
-			identifier: function.notFound
-			count: 1
-			path: src/Crud.php
-
-		-
-			message: '#^Access to property \$attributes_manager on an unknown class MicroweberPackages\\App\\LaravelApplication\.$#'
-			identifier: class.notFound
+			message: '#^Access to an undefined property MicroweberPackages\\App\\LaravelApplication\:\:\$attributes_manager\.$#'
+			identifier: property.notFound
 			count: 1
 			path: src/DatabaseManagerService.php
 
 		-
-			message: '#^Access to property \$cache_manager on an unknown class MicroweberPackages\\App\\LaravelApplication\.$#'
-			identifier: class.notFound
+			message: '#^Access to an undefined property MicroweberPackages\\App\\LaravelApplication\:\:\$cache_manager\.$#'
+			identifier: property.notFound
 			count: 18
 			path: src/DatabaseManagerService.php
 
 		-
-			message: '#^Access to property \$category_manager on an unknown class MicroweberPackages\\App\\LaravelApplication\.$#'
-			identifier: class.notFound
+			message: '#^Access to an undefined property MicroweberPackages\\App\\LaravelApplication\:\:\$category_manager\.$#'
+			identifier: property.notFound
 			count: 7
 			path: src/DatabaseManagerService.php
 
 		-
-			message: '#^Access to property \$data_fields_manager on an unknown class MicroweberPackages\\App\\LaravelApplication\.$#'
-			identifier: class.notFound
+			message: '#^Access to an undefined property MicroweberPackages\\App\\LaravelApplication\:\:\$data_fields_manager\.$#'
+			identifier: property.notFound
 			count: 1
 			path: src/DatabaseManagerService.php
 
 		-
-			message: '#^Access to property \$fields_manager on an unknown class MicroweberPackages\\App\\LaravelApplication\.$#'
-			identifier: class.notFound
+			message: '#^Access to an undefined property MicroweberPackages\\App\\LaravelApplication\:\:\$fields_manager\.$#'
+			identifier: property.notFound
 			count: 2
 			path: src/DatabaseManagerService.php
 
 		-
-			message: '#^Access to property \$media_manager on an unknown class MicroweberPackages\\App\\LaravelApplication\.$#'
-			identifier: class.notFound
+			message: '#^Access to an undefined property MicroweberPackages\\App\\LaravelApplication\:\:\$media_manager\.$#'
+			identifier: property.notFound
 			count: 2
 			path: src/DatabaseManagerService.php
 
 		-
-			message: '#^Access to property \$user_manager on an unknown class MicroweberPackages\\App\\LaravelApplication\.$#'
-			identifier: class.notFound
+			message: '#^Access to an undefined property MicroweberPackages\\App\\LaravelApplication\:\:\$user_manager\.$#'
+			identifier: property.notFound
 			count: 3
 			path: src/DatabaseManagerService.php
 
@@ -103,50 +79,20 @@ parameters:
 			path: src/DatabaseManagerService.php
 
 		-
-			message: '#^Call to method filter\(\) on an unknown class Modules\\Category\\Models\\Category\.$#'
-			identifier: class.notFound
-			count: 1
-			path: src/DatabaseManagerService.php
-
-		-
-			message: '#^Call to method filter\(\) on an unknown class Modules\\Content\\Models\\Content\.$#'
-			identifier: class.notFound
-			count: 1
-			path: src/DatabaseManagerService.php
-
-		-
-			message: '#^Call to method query\(\) on an unknown class Modules\\Category\\Models\\Category\.$#'
-			identifier: class.notFound
-			count: 2
-			path: src/DatabaseManagerService.php
-
-		-
-			message: '#^Call to method query\(\) on an unknown class Modules\\Content\\Models\\Content\.$#'
-			identifier: class.notFound
-			count: 2
-			path: src/DatabaseManagerService.php
-
-		-
 			message: '#^Call to static method connection\(\) on an unknown class MicroweberPackages\\Database\\Traits\\DB\.$#'
 			identifier: class.notFound
 			count: 1
 			path: src/DatabaseManagerService.php
 
 		-
-			message: '#^Call to static method query\(\) on an unknown class Modules\\CustomFields\\Models\\CustomField\.$#'
-			identifier: class.notFound
+			message: '#^Cannot call method filter\(\) on class\-string\|object\.$#'
+			identifier: method.nonObject
 			count: 1
 			path: src/DatabaseManagerService.php
 
 		-
-			message: '#^Call to static method query\(\) on an unknown class Modules\\CustomFields\\Models\\CustomFieldValue\.$#'
-			identifier: class.notFound
-			count: 1
-			path: src/DatabaseManagerService.php
-
-		-
-			message: '#^Call to static method query\(\) on an unknown class Modules\\Media\\Models\\Media\.$#'
-			identifier: class.notFound
+			message: '#^Cannot call method query\(\) on class\-string\|object\.$#'
+			identifier: method.nonObject
 			count: 1
 			path: src/DatabaseManagerService.php
 
@@ -158,48 +104,6 @@ parameters:
 
 		-
 			message: '#^Caught class QueryException not found\.$#'
-			identifier: class.notFound
-			count: 1
-			path: src/DatabaseManagerService.php
-
-		-
-			message: '#^Class Modules\\Category\\Models\\Category not found\.$#'
-			identifier: class.notFound
-			count: 1
-			path: src/DatabaseManagerService.php
-
-		-
-			message: '#^Class Modules\\Content\\Models\\Content not found\.$#'
-			identifier: class.notFound
-			count: 2
-			path: src/DatabaseManagerService.php
-
-		-
-			message: '#^Function get_category_items not found\.$#'
-			identifier: function.notFound
-			count: 4
-			path: src/DatabaseManagerService.php
-
-		-
-			message: '#^Function morph_name not found\.$#'
-			identifier: function.notFound
-			count: 2
-			path: src/DatabaseManagerService.php
-
-		-
-			message: '#^Function save_category not found\.$#'
-			identifier: function.notFound
-			count: 2
-			path: src/DatabaseManagerService.php
-
-		-
-			message: '#^Function user_ip not found\.$#'
-			identifier: function.notFound
-			count: 1
-			path: src/DatabaseManagerService.php
-
-		-
-			message: '#^Instantiated class Modules\\Category\\Models\\Category not found\.$#'
 			identifier: class.notFound
 			count: 1
 			path: src/DatabaseManagerService.php
@@ -225,12 +129,6 @@ parameters:
 		-
 			message: '#^Method MicroweberPackages\\Database\\DatabaseManagerService\:\:save\(\) should return int\|string but returns false\.$#'
 			identifier: return.type
-			count: 1
-			path: src/DatabaseManagerService.php
-
-		-
-			message: '#^Property MicroweberPackages\\Database\\DatabaseManagerService\:\:\$app has unknown class MicroweberPackages\\App\\LaravelApplication as its type\.$#'
-			identifier: class.notFound
 			count: 1
 			path: src/DatabaseManagerService.php
 
@@ -311,12 +209,6 @@ parameters:
 			identifier: empty.variable
 			count: 2
 			path: src/Traits/QueryFilter.php
-
-		-
-			message: '#^Access to an undefined property Illuminate\\Foundation\\Application\:\:\$cache_manager\.$#'
-			identifier: property.notFound
-			count: 2
-			path: src/Utils.php
 
 		-
 			message: '#^Access to an undefined property MicroweberPackages\\Database\\Utils\:\:\$app\.$#'
